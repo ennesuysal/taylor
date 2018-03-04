@@ -3,7 +3,6 @@
 
 double turev(double x, int n)
 {
-
 	if(n==0) return sqrt(x);
 
 	double carpim = 1.0;
@@ -27,7 +26,6 @@ int fakt(int sayi){
 
 double dn(int n, double h, double x0)
 {
-
 	double a;
 	if(turev(x0, n)>turev(x0+h, n))
 	{
@@ -55,8 +53,8 @@ int n_bulma(double hata, double h, double x0)
 	}
 }
 
-int tamkare(int sayi){
-
+int tamkare(int sayi)
+{
 	for(int i = 1; i<=sayi; i++)
 	{
 		if(i*i==sayi)
@@ -69,8 +67,8 @@ int tamkare(int sayi){
 	return 0;
 }
 
-int hBul(int deger){
-
+int hBul(int deger)
+{
 	int i=1;
 
 	while(1)
@@ -91,8 +89,7 @@ int hBul(int deger){
 
 
 double taylor(double hata, double deger)
-{
-	
+{	
 	int h = hBul(deger);
 	int x0 = deger-h;
 	int n = n_bulma(hata, h, x0);
@@ -111,7 +108,6 @@ double taylor(double hata, double deger)
 	}
 
 	return sonuc;
-
 }
 
 
